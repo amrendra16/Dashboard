@@ -13,13 +13,12 @@ import SettingsApplicationsOutlinedIcon from '@mui/icons-material/SettingsApplic
 import AssignmentIndOutlinedIcon from '@mui/icons-material/AssignmentIndOutlined';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
 import { Link } from 'react-router-dom';
-import {DarkModeContext} from "../../context/darkModeContext"
-import { useContext } from 'react';
+
 
 
 const Sidebar = () => {
 
-    const {dispatch} = useContext(DarkModeContext)
+   
   return (
     <div className='sidebar'>
       <div className="top">
@@ -37,10 +36,16 @@ const Sidebar = () => {
       <div className="center">
         <ul>
             <p className='title'>MAIN</p>
+            <Link to="/" style={{textDecoration:"none"}}>
+
         <li>
             <DashboardIcon className='icon'/>
             <span>Dashboard</span>
         </li>
+            </Link>
+        
+        
+
 
 
         <p className='title'>LISTS</p>
@@ -51,7 +56,7 @@ const Sidebar = () => {
         </li>
         </Link>
 
-        <Link to="/products" style={{textDecoration:"none"}}>
+        <Link to="/users" style={{textDecoration:"none"}}>
         <li> 
             <ProductionQuantityLimitsOutlinedIcon className='icon'/>
             <span>Products</span>
@@ -100,12 +105,7 @@ const Sidebar = () => {
 
         </ul>
         </div>
-      <div className="bottom">
-        <div className="colorOption" onClick={()=> dispatch({type:"LIGHT"})}></div>
-        <div className="colorOption"onClick={()=> dispatch({type:"DARK"})}></div>
-         
-            
-        </div>
+     
     </div>
   )
 }

@@ -15,7 +15,7 @@ const Navbar = () => {
 
   return (
     <div className='navbar'>
-      <div className="wrapper">
+      <div className="nav_item">
         <div className="search">
         <input type="text" placeholder="Search..."  />
         <SearchIcon/>
@@ -53,7 +53,7 @@ const Navbar = () => {
 
           <div className="item">
          <img src="https://images.pexels.com/photos/14966939/pexels-photo-14966939/free-photo-of-surfer-on-sea-waves.jpeg?auto=compress&cs=tinysrgb&w=400&lazy=load"
-          alt="" className="avatar"/>
+          alt="" className="img"/>
            
           </div>
 

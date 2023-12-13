@@ -1,14 +1,12 @@
 .navbar{
-    height: 50px;
-    // border-bottom: 0.5px solid whitesmoke;
-    border-bottom: 0.5px solid gray;
-
-    display: flex;
-    align-items: center;
-    font-size: 20px;
     color: gray;
+    align-items: center;
+    font-size: 17px;
+    border-bottom: 0.5px solid gray;
+    height: 50px;
+    display: flex;
 
-    .wrapper{
+    .nav_item{
         width: 100%;
         padding: 20px;
         display: flex;
@@ -17,8 +15,9 @@
         .search{
             display: flex;
             align-items: center;
-            border: 0.5px solid lightgray;
-            padding: 3;
+            border-radius: 5px;
+            border: 0.5px solid rgb(236, 224, 224);
+            padding: 5;
             
 
 
@@ -28,7 +27,7 @@
                 background: transparent;
 
                 &::placeholder{
-                    font-size: 13px;
+                    font-size: 15px;
                 }
             }
         }
@@ -44,7 +43,7 @@
             .item{
                 display: flex;
                 align-items: center;
-                margin-right: 25px;
+                margin-right: 20px;
                 position: relative;
               
 
@@ -52,23 +51,23 @@
                 .icon{
                    font-size:30px ; 
                 }
-                .avatar{
+                .img{
                     width: 30px;
                     height: 30px;
                     border-radius:50%;
                 }
                 .counter{
-                    width: 15px;
-                    height: 15px;
                     background-color: red;
                     border-radius: 50%;
                     color: white;
                     display: flex;
                     align-items: center;
-                    justify-content: center;
-                    font-size: 10px;
+                    width: 15px;
+                    height: 15px;
                     font-weight: bold;
                     position: absolute;
+                    justify-content: center;
+                    font-size: 10px;
                     top: 0;
                     right: 0;
                     text-align: center;
